@@ -17,3 +17,16 @@ def binary_search(arr, target):
 print(binary_search([1, 2, 3, 4, 5, 6], 5))
 
 # O(log n)
+
+
+def binarySearch(arr, low, high, target):
+    while high >= low:
+        mid = low + (high - low) // 2
+        guess = arr[mid]
+        if guess == target:
+            return mid
+        elif guess < target:
+            return binarySearch(arr, mid+1, high, target)
+        else:
+            return binarySearch(arr, low, mid-1, target)
+    return None

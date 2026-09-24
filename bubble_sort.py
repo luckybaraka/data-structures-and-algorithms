@@ -1,0 +1,16 @@
+def bubble_sort(arr: list[int]) -> list[int]:
+    n = len(arr)
+    for i in range(n-1):
+        swapped = False
+        for j in range(n-i-1):
+            if arr[j] > arr[j+1]:
+                arr[j], arr[j+1] = arr[j+1], arr[j]
+        swapped = True
+        if not swapped:
+            break
+    return arr
+
+
+arr = [45, 43, 23, 12, 76, 56, 89, 87, 98, 90]
+res = bubble_sort(arr)
+print(res)

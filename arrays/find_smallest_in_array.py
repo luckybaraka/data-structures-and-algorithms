@@ -8,3 +8,7 @@ def smallest(arr: list[int])-> int:
 
 arr = [4, 2, 3, 6, 7, 6, 2]
 print(smallest(arr))
+
+
+print(min(arr))
+print(max(arr))

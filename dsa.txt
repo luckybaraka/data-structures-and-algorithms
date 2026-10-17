@@ -1,0 +1,5 @@
+data structures can be divided into two things:
+That is primitive data structures and abstract data structures
+Primitives are providedby most progarmming langauges like strings, characters, intergetrs, etc
+abstract are made out of primitive, like stacks, arrays, queues etc
+
